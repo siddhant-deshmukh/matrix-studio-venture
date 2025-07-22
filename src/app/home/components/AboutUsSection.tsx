@@ -14,13 +14,13 @@ export default function AboutUsSection() {
           <strong className="section-header">
             Core Business Principles
           </strong>
-          <div className="about-section-cards pt-5 d-flex justify-content-center">
+          <div className="about-section-cards d-flex flex-column flex-md-row pt-5 d-flex justify-content-center align-items-center align-items-md-stretch gap-4 gap-lg-5">
             <div className="bg-white temp-scale-down text-black">
               <img className="mb-4" src={'/about-us-img-1.png'}></img>
               <div>Solve a real Human Problem</div>
               <p className="p-4">Successful companies need to deliver solutions that are “need to haves”, not just “nice to haves”.</p>
             </div>
-            <div className="bg-black temp-scale-down text-white dark mx-4">
+            <div className="bg-black temp-scale-down text-white dark">
               <img className="mb-4" src={'/about-us-img-2.png'}></img>
               <div>Unit economics that Scale</div>
               <p className="p-4 text-foreground-muted">Every business needs a clear path to profitability, enabling responsible growth and leading to financing options beyond just venture capital.</p>

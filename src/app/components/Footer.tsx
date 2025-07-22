@@ -13,10 +13,12 @@ export default function Footer() {
   }, []);
   return (
     <div className="bg-black footer text-white py-4 px-2">
-      <div className="max-w-xl d-flex justify-content-center align-items-center">
+      <div className="max-w-xl d-flex justify-content-between mx-auto align-items-center">
         <div className="text-s">© 2021 Copyright - Max  Venture Studio. A proud  UAE company.</div>
-        <div className="d-flex">
-
+        <div className="d-flex gap-3">
+          <img src={'social-1.png'}/>
+          <img src={'social-2.png'}/>
+          <img src={'social-3.png'}/>
         </div>
       </div>
     </div>

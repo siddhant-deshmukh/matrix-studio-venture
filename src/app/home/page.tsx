@@ -4,6 +4,7 @@ import OurServices from './components/OutServices';
 import ProcessSection from './components/ProcessSection';
 import OutPrograms from './components/ProgramsSection';
 import './styles.css'
+import ContactUs from './components/ContactUsSection';
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
         <OurServices />
         <ProcessSection />
         <OutPrograms />
+        <ContactUs />
       </div>
     </div>
   );

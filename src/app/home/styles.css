@@ -9,12 +9,13 @@
 /* About Section  */
 /** ************************************************************************************************************/
 .about-section-cards > div {
-  width: 278px;
-  height: 386px;
+  max-width: 278px;
+  width: 100%;
+  min-height: 386px;
   opacity: 1;
   border-radius: 19px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
 }
 .about-section-cards > div > img {
   margin-top: 50px;
@@ -38,6 +39,34 @@
   text-align: center !important;
 }
 
+.about-section-cards > div > div {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.about-section-cards > div > p {
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
+}
+
+/* Card box styles */
+.about-section-cards > div > div,
+.about-section-cards > div > p {
+  padding: 0 10px;
+}
+
+/* Common card styling */
+.about-section-cards > div > div.temp-scale-down {
+  width: 100%;
+  max-width: 278px;
+  height: 386px;
+  border-radius: 19px;
+  margin: 0 auto;
+}
 
 
 /** ************************************************************************************************************/
@@ -271,23 +300,11 @@ h3::after {
 /* Our Programs Section  */
 /** ************************************************************************************************************/
 .program-cards .verticle-card {
-  width: 248px !important;
-  height: 330px !important;
-  top: 5542px !important;
-  left: 207px !important;
-  border-radius: 19px !important;
-  
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 40px;
-  justify-content: space-between;
-}
-
-.program-cards .verticle-card {
-  width: 248px !important;
-  height: 330px !important;
-  border-radius: 19px !important;
+  max-width: 248px;
+  width: 100%;
+  max-height: 330px;
+  aspect-ratio: 248 / 330;
+  border-radius: 19px;
   
   display: flex;
   flex-direction: column;
@@ -308,13 +325,16 @@ h3::after {
   letter-spacing: 0% !important;
   text-align: left !important;
 }
+.program-cards .verticle-holder {
+  width: 100% !important;
+  width: 357px !important;
+}
 
 .program-cards .horzontal-card {
   width: 357px !important;
   height: 196px !important;
   opacity: 1 !important;
   border-radius: 19px !important;
-
 
   display: flex;
   flex-direction: column;
@@ -332,6 +352,105 @@ h3::after {
   line-height: 100% !important;
   letter-spacing: 0% !important;
   text-align: left !important;
+}
+
+
+/* Contact Us */
+.contact-us {
+  width: 100%;
+  max-width: 1145px;
+  top: 6392px;
+  left: 140px;
+  border-radius: 19px;
+}
+
+.contact-us form {
+  max-width: 384px;
+  width: min(500px, 100%);
+  margin-left: auto;
+}
+.contact-us form input {
+  background-color: transparent;
+}
+
+.contact-form-text {
+  width: 500px;
+}
+
+.contact-form-text > div {
+  width: 100%;
+  font-family: var(--font-raleway);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+.contact-form-text > h6 {
+  font-family: var(--font-raleway);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+.contact-form-text > p {
+  font-family: var(--font-open-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: var(--primary-muted);
+}
+
+.contact-form {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.contact-form .form-control {
+  border-radius: 8px;
+  background-color: black;
+  border: 1px solid #CCCCCC;
+  color: white;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+}
+
+.contact-form textarea.form-control {
+  height: 144px;
+  resize: none;
+}
+
+.contact-form .form-control::placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+.contact-form .form-control:focus {
+  border-color: #00C6FF;
+  box-shadow: 0 0 0 0.25rem rgba(0, 198, 255, 0.25);
+  background-color: black;
+  color: white;
+}
+
+
+.contact-form .btn.bg-btn-gradient {
+  width: 384px;
+  height: 54px;
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: white;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
