@@ -1,0 +1,344 @@
+/** ************************************************************************************************************/
+/* Hero Section  */
+/** ************************************************************************************************************/
+.hero-bg {
+  background: linear-gradient(90.19deg, var(--background) 0.15%, var(--background-secondary) 98.45%);
+}
+
+/** ************************************************************************************************************/
+/* About Section  */
+/** ************************************************************************************************************/
+.about-section-cards > div {
+  width: 278px;
+  height: 386px;
+  opacity: 1;
+  border-radius: 19px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.about-section-cards > div > img {
+  margin-top: 50px;
+  width: 100px;
+  height: 105px;
+  opacity: 1;
+  
+}
+.about-section-cards > div > div {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.about-section-cards > div > p {
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+  text-align: center !important;
+}
+
+
+
+/** ************************************************************************************************************/
+/* Service Section  */
+/** ************************************************************************************************************/
+
+.service-cards .verticle-card{
+  width: 248px !important;
+  height: 330px !important;
+  opacity: 1 !important;
+  border-radius: 19px !important;
+  display: flex;
+  flex-direction: column !important;
+  justify-items: center !important;
+  padding: 30px;
+  padding-top: 60px;
+  gap: 20px !important;
+}
+
+.service-cards img {
+  width: 62px !important;
+  height: 62px !important;
+}
+
+.service-cards .horizontal-card {
+  width: 357px !important;
+  height: 196px !important;
+  border-radius: 19px !important;
+  display: flex;
+  flex-direction: column !important;
+  justify-items: center !important;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  gap: 10px !important;
+}
+
+.service-cards h6 {
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+  margin-bottom: 0px !important;
+  text-align: left !important;
+}
+
+.service-cards p {
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+  text-align: left !important;
+  color: #313131;
+}
+
+.service-cards .text-white p {
+  color: #cccccc;
+}
+
+h3::after {
+  content: '.';
+  font-family: var(--font-raleway), sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 92px !important;
+  line-height: 0px !important;
+  letter-spacing: 0% !important;
+  color: #F0AB00 !important;
+  width: 20px;
+  height: 30px;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.our-services-list img {
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.our-services-list li {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+  color: #cccccc !important;
+}
+.our-services-list li {
+  position: relative !important;
+  padding-left: 38px !important;
+  margin-bottom: 15px !important;
+  line-height: 1.5 !important;
+}
+
+.our-services-list ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+
+
+.our-services-list li::before {
+  content: '' !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+
+  width: 28px !important;
+  height: 28px !important;
+
+  background-image: url('/bullet-point.png') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+
+
+/** ************************************************************************************************************/
+/* Our Projects Section  */
+/** ************************************************************************************************************/
+
+.hex-section {
+  padding-top: 350px;
+  padding-bottom: 350px;
+}
+
+
+.hex {
+    margin-top: 30px;
+    width: 104px;
+    height: 60px;
+    position: relative;
+    display: inline-block;
+}
+.hex:before {
+    content: "";
+    width: 0; height: 0;
+    border-bottom: 30px solid;
+    border-color: inherit;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+}
+.hex:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid;
+    border-color: inherit;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    left: 0px;
+}
+
+.hex svg {
+  position: absolute;
+}
+
+.hex > img {
+  width: 36px !important;
+  height: 36px !important;
+  position: absolute !important;
+  top: 50% !important;  
+  left: 50% !important; 
+  transform: translate(-50%, -50%) !important; 
+}
+
+.hex .info-card {
+  position: absolute !important;
+  z-index: -1;
+  width: 278px !important;
+  height: 376px !important;
+  opacity: 1 !important;
+  border-radius: 19px !important;
+  text-align: left !important;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hex > .info-card.top-left {
+  bottom: 0px !important;
+  right: 52px !important;
+}
+.hex > .info-card.top-right {
+  bottom: 0px !important;
+  left: 52px !important;
+}
+.hex > .info-card.bottom-left {
+  top: 0px !important;
+  right: 52px !important;
+  padding-top: 120px;
+}
+.hex > .info-card.bottom-right {
+  top: 0px !important;
+  left: 52px !important;
+  padding-top: 120px;
+}
+
+.hex .info-card h6 {
+  font-family: var(--font-raleway), sans-serif;
+  font-weight: 800 !important;
+  font-size: 34px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.hex .info-card p {
+  font-family: var(--font-open-sans), sans-serif;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+  text-align: left !important;
+  color: #A0A0A0;
+}
+
+/** ************************************************************************************************************/
+/* Our Programs Section  */
+/** ************************************************************************************************************/
+.program-cards .verticle-card {
+  width: 248px !important;
+  height: 330px !important;
+  top: 5542px !important;
+  left: 207px !important;
+  border-radius: 19px !important;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.program-cards .verticle-card {
+  width: 248px !important;
+  height: 330px !important;
+  border-radius: 19px !important;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.program-cards .verticle-card div {
+  width: 77px !important;
+  height: 77px !important;
+}
+
+.program-cards .verticle-card h6 {
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+  text-align: left !important;
+}
+
+.program-cards .horzontal-card {
+  width: 357px !important;
+  height: 196px !important;
+  opacity: 1 !important;
+  border-radius: 19px !important;
+
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  justify-content: space-between;
+}
+.program-cards .horzontal-card div {
+  width: 57px !important;
+  height: 46px !important;
+}
+.program-cards .horzontal-card h6 {
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  line-height: 100% !important;
+  letter-spacing: 0% !important;
+  text-align: left !important;
+}
+
+.footer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
