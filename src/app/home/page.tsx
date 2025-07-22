@@ -6,6 +6,8 @@ import OutPrograms from './components/ProgramsSection';
 import './styles.css'
 import ContactUs from './components/ContactUsSection';
 
+export const dynamic = 'force-static'; 
+
 export default function HomePage() {
   return (
     <div className='d-flex flex-column'>
